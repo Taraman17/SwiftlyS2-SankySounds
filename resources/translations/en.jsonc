@@ -1,0 +1,5 @@
+{
+  "prefix": "[yellow][[blue]SankySounds[yellow]][default] ",
+  "sounds_toggle": "Sanky Sounds have been {0}",
+  "sounds_cooldown": "Please wait [red]{0}[default] seconds before using a sound!"
+}
