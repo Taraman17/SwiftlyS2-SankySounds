@@ -11,8 +11,8 @@
 Download the plugin from the latest release and install it on your server.
 
 ### Requirements:
-- **[SwiftlyS2]**(https://github.com/swiftly-solution/swiftlys2)
-- **[AudioApi]**(https://github.com/SwiftlyS2-Plugins/Audio)
+- **[** [SwiftlyS2](https://github.com/swiftly-solution/swiftlys2) **]**
+- **[** [AudioApi](https://github.com/SwiftlyS2-Plugins/Audio) **]**
 
 ## Configuration
 
