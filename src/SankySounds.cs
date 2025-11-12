@@ -7,9 +7,11 @@ using SwiftlyS2.Shared;
 using SwiftlyS2.Shared.Commands;
 using SwiftlyS2.Shared.GameEventDefinitions;
 using SwiftlyS2.Shared.GameEvents;
+using SwiftlyS2.Shared.Menus;
 using SwiftlyS2.Shared.Misc;
 using SwiftlyS2.Shared.Players;
 using SwiftlyS2.Shared.Plugins;
+using Tomlyn.Extensions.Configuration;
 
 namespace Sanky_Sounds;
 
@@ -31,10 +33,10 @@ public partial class Sanky_Sounds : BasePlugin
     public override void Load(bool hotReload)
     {
         Core.Configuration
-            .InitializeJsonWithModel<PluginConfig>("config.jsonc", "SankySounds")
+            .InitializeTomlWithModel<PluginConfig>("config.toml", "SankySounds")
             .Configure(builder =>
             {
-                builder.AddJsonFile("config.jsonc", optional: false, reloadOnChange: true);
+                builder.AddTomlFile("config.toml", optional: false, reloadOnChange: true);
             });
 
         ServiceCollection services = new();
@@ -63,6 +65,8 @@ public partial class Sanky_Sounds : BasePlugin
                 player.SendMessage(MessageType.Chat, Core.Translation.GetPlayerLocalizer(player)["prefix"] + Core.Translation.GetPlayerLocalizer(player)["sounds_toggle", state]);
             });
         }
+
+
 
     }
     [ClientChatHookHandler]
