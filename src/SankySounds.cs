@@ -15,7 +15,7 @@ using Tomlyn.Extensions.Configuration;
 
 namespace Sanky_Sounds;
 
-[PluginMetadata(Id = "Sanky_Sounds", Version = "1.0.0", Name = "Sanky Sounds", Author = "T3Marius", Description = "No description.")]
+[PluginMetadata(Id = "Sanky_Sounds", Version = "1.0.1", Name = "Sanky Sounds", Author = "T3Marius", Description = "No description.")]
 public partial class Sanky_Sounds : BasePlugin
 {
     private ServiceProvider? _provider;
